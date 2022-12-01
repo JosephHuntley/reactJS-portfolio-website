@@ -18,7 +18,7 @@ const data = [
   {
     id: 2,
     image: IMG2,
-    title: "MERN",
+    title: "Memories",
     github: "github.com",
     demo: "github.com",
   },
@@ -46,7 +46,7 @@ const data = [
   {
     id: 6,
     image: IMG6,
-    title: "Vue",
+    title: "React",
     github: "github.com",
     demo: "github.com",
   },
@@ -60,18 +60,38 @@ const Portfolio = () => {
       <div className="container portfolio__container">
         {data.map(({ id, image, title, github, demo }) => {
           return (
-            <article key={id} className="portfolio__item">
-              <div className="portfolio__item-image">
-                <img src={image} alt={title} />
-              </div>
-              <h3>{title}</h3>
-              <div className="portfolio__item-cta">
-                <a href={github} className="btn" target="_blank">
-                  GitHub
-                </a>
-                <a href={demo} className="btn btn-primary" target="_blank">
-                  Demo
-                </a>
+            <article key={id} className="portfolio__item flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <div className="card-body">
+                    <div className="portfolio__item-image">
+                      <img src={image} alt={title} />
+                    </div>
+                    <h3 className="portfolio__title">{title}</h3>
+                  </div>
+                </div>
+                <div className="flip-card-back card-body">
+                  <h3 className="card-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quos fugiat cumque nostrum atque dolorum laboriosam!
+                  </h3>
+                  <div className="portfolio__item-cta">
+                    <a
+                      href={github}
+                      className="btn"
+                      target="_blank"
+                      rel="noreferrer">
+                      GitHub
+                    </a>
+                    <a
+                      href={demo}
+                      className="btn btn-primary"
+                      target="_blank"
+                      rel="noreferrer">
+                      Demo
+                    </a>
+                  </div>
+                </div>
               </div>
             </article>
           );
