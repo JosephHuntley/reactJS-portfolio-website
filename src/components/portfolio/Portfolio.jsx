@@ -56,11 +56,11 @@ const data = [
 	{
 		id: 6,
 		image: IMG6,
-		title: 'React',
-		github: 'github.com',
-		demo: 'github.com',
+		title: 'Chat Application',
+		github: 'https://github.com/JosephHuntley/chat_application',
+		demo: 'https://youtu.be/MWFS30DgIio',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugiat cumque nostrum atque dolorum laboriosam!',
+			'A fully responsive webpage built using React, Node, and Express JS. It uses the Stream Chat API to send messages between users.',
 	},
 ];
 
