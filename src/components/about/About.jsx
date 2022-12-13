@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './about.css';
-import ME from '../../assets/me-about.jpg';
+// import ME from '../../assets/me-about.jpg';
 import { FaAward } from 'react-icons/fa';
 import { SlHourglass } from 'react-icons/sl';
 import { VscFolderLibrary } from 'react-icons/vsc';
