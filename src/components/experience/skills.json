@@ -1,0 +1,24 @@
+{
+	"frontend": [
+		{ "skill": "React", "level": "Intermediate" },
+		{ "skill": "Redux", "level": "Intermediate" },
+		{ "skill": "NextJS", "level": "Basic" },
+		{ "skill": "HTML", "level": "Advance" },
+		{ "skill": "JavaScript", "level": "Intermediate" },
+		{ "skill": "CSS", "level": "Basic" },
+		{ "skill": "Material UI", "level": "Intermediate" },
+		{ "skill": "Bootstrap", "level": "Basic" },
+		{ "skill": "Tailwind", "level": "Basic" }
+	],
+	"backend": [
+		{ "skill": "NodeJS", "level": "Intermediate" },
+		{ "skill": "ExpressJS", "level": "Intermediate" },
+		{ "skill": "Python", "level": "Basic" },
+		{ "skill": "Java", "level": "Basic" },
+		{ "skill": "Springboot", "level": "Basic" },
+		{ "skill": "Dotnet", "level": "Basic" },
+		{ "skill": "MySQL", "level": "Intermediate" },
+		{ "skill": "MongoDB", "level": "Basic" },
+		{ "skill": "Postgres", "level": "Basic" }
+	]
+}
