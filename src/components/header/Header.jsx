@@ -8,14 +8,14 @@ const Header = () => {
 	return (
 		<header>
 			<div className='container header__container'>
-				<h1 class='word'>
-					<span class='char'>W</span>
-					<span class='char'>E</span>
-					<span class='char'>L</span>
-					<span class='char'>C</span>
-					<span class='char'>O</span>
-					<span class='char'>M</span>
-					<span class='char'>E</span>
+				<h1 className='word'>
+					<span className='char'>W</span>
+					<span className='char'>E</span>
+					<span className='char'>L</span>
+					<span className='char'>C</span>
+					<span className='char'>O</span>
+					<span className='char'>M</span>
+					<span className='char'>E</span>
 				</h1>
 
 				<h5>I'm</h5>
