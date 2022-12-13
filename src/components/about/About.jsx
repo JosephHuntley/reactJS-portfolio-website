@@ -1,25 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './about.css';
 import ME from '../../assets/me-about.jpg';
 import { FaAward } from 'react-icons/fa';
 import { SlHourglass } from 'react-icons/sl';
 import { VscFolderLibrary } from 'react-icons/vsc';
+import SnowGlobe from '../snowglobe/SnowGlobe.jsx';
 
 const About = () => {
+	const [width, setWidth] = useState(window.innerWidth);
+
+	const detectSize = () => {
+		setWidth(window.innerWidth);
+	};
+
+	useEffect(() => {
+		window.addEventListener('resize', detectSize);
+
+		return () => {
+			window.removeEventListener('resize', detectSize);
+		};
+	}, [width]);
 	return (
 		<section id='about'>
 			<h5 className=''>Get to know</h5>
 			<h2>About me</h2>
 
 			<div className='container about__container'>
-				<div className='about__me'>
+				{/*<div className='about__me'>
 					<div className='about__me-image'>
 						<img
 							src={ME}
 							alt='Head shot'
 						/>
 					</div>
-				</div>
+				</div> */}
+				{width > 1024 ? <SnowGlobe /> : null}
 
 				<div className='about__content'>
 					<div className='about__cards'>
