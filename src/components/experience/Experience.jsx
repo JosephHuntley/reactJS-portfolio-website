@@ -1,24 +1,9 @@
 import React from 'react';
 import './experience.css';
 import { BsPatchCheckFill } from 'react-icons/bs';
+import skills from './skills.json';
 
-const frontend = [
-	{ skill: 'React', level: 'Intermediate' },
-	{ skill: 'MaterialUI', level: 'Intermediate' },
-	{ skill: 'HTML', level: 'Advance' },
-	{ skill: 'JavaScript', level: 'Intermediate' },
-	{ skill: 'CSS', level: 'Basic' },
-	{ skill: 'Angular', level: 'Basic' },
-];
-
-const backend = [
-	{ skill: 'NodeJS', level: 'Intermediate' },
-	{ skill: 'ExpressJS', level: 'Intermediate' },
-	{ skill: 'Java', level: 'Basic' },
-	{ skill: 'Springboot', level: 'Basic' },
-	{ skill: 'Python', level: 'Basic' },
-	{ skill: 'Dotnet', level: 'Basic' },
-];
+const { frontend, backend } = skills;
 
 const experience = () => {
 	return (
@@ -31,7 +16,9 @@ const experience = () => {
 					<div className='experience__content'>
 						{frontend.map(({ skill, level }) => {
 							return (
-								<article className='experience__details'>
+								<article
+									className='experience__details'
+									key={skill}>
 									<BsPatchCheckFill className='experience__details-icons' />
 									<div>
 										<h4>{skill}</h4>
@@ -48,7 +35,9 @@ const experience = () => {
 					<div className='experience__content'>
 						{backend.map(({ skill, level }) => {
 							return (
-								<article className='experience__details'>
+								<article
+									className='experience__details'
+									key={skill}>
 									<BsPatchCheckFill className='experience__details-icons' />
 									<div>
 										<h4>{skill}</h4>
