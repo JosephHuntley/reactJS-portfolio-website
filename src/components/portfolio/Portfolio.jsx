@@ -40,6 +40,7 @@ const Portfolio = () => {
 											<img
 												src={image}
 												alt={name}
+												style={{ height: '215px', width: '300px' }}
 											/>
 										</div>
 										<h3 className='portfolio__title'>{name}</h3>
