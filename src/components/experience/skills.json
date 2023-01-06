@@ -1,18 +1,18 @@
 {
 	"frontend": [
 		{ "skill": "React", "level": "Intermediate" },
-		{ "skill": "Redux", "level": "Intermediate" },
+		{ "skill": "Redux", "level": "Basic" },
 		{ "skill": "NextJS", "level": "Basic" },
 		{ "skill": "HTML", "level": "Advance" },
 		{ "skill": "JavaScript", "level": "Intermediate" },
-		{ "skill": "CSS", "level": "Basic" },
+		{ "skill": "CSS", "level": "Intermediate" },
 		{ "skill": "Material UI", "level": "Intermediate" },
-		{ "skill": "Bootstrap", "level": "Basic" },
-		{ "skill": "Tailwind", "level": "Basic" }
+		{ "skill": "Styled Component", "level": "Intermediate" },
+		{ "skill": "Tailwind", "level": "Intermediate" }
 	],
 	"backend": [
-		{ "skill": "NodeJS", "level": "Intermediate" },
-		{ "skill": "ExpressJS", "level": "Intermediate" },
+		{ "skill": "NodeJS", "level": "Basic" },
+		{ "skill": "ExpressJS", "level": "Basic" },
 		{ "skill": "Python", "level": "Basic" },
 		{ "skill": "Java", "level": "Basic" },
 		{ "skill": "Springboot", "level": "Basic" },
